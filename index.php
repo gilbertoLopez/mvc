@@ -4,8 +4,5 @@ ini_set('display_startup_errors',1);
 error_reporting(-1);
 session_start();
 define('basePath',$_SERVER["DOCUMENT_ROOT"].'/');
-define('webRoot', 'http://'.$_SERVER['SERVER_NAME'].'/');
-
-$landingPage = 'bienvenido';
+define('webRoot', 'http://'.$_SERVER['SERVER_NAME'].':90/');
 require_once basePath.'lib/functions/init.php';
-Controller::saludo();
